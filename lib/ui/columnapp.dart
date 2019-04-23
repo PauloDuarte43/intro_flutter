@@ -56,7 +56,7 @@ class ColumnApp extends StatelessWidget {
                   textDirection: TextDirection.ltr,
                   style: TextStyle(fontStyle: FontStyle.italic, fontSize: 15.0),
                 ),
-                Expanded(child: Text("Ola!")),
+                Expanded(child: Text("Ola!",style: TextStyle(fontStyle: FontStyle.italic, fontSize: 15.0))),
                 Text(
                   "Teste 2",
                   textDirection: TextDirection.ltr,
