@@ -24,7 +24,11 @@ class ColumnApp extends StatelessWidget {
                 new FlatButton(
                     onPressed: () => "Teste",
                     color: Colors.amberAccent,
-                    child: Text("Botao"))
+                    child: Text("Botao")),
+                Padding(padding: EdgeInsets.all(50.0), child: FlatButton(
+                    onPressed: () => "Teste",
+                    color: Colors.amberAccent,
+                    child: Text("Botao")))
               ]),
           new Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -43,7 +47,38 @@ class ColumnApp extends StatelessWidget {
                     onPressed: () => "Teste",
                     color: Colors.amberAccent,
                     child: Text("Botao"))
-              ])
+              ]),
+          new Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Text(
+                  "Teste 2",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(fontStyle: FontStyle.italic, fontSize: 15.0),
+                ),
+                Expanded(child: Text("Ola!")),
+                Text(
+                  "Teste 2",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(fontStyle: FontStyle.italic, fontSize: 15.0),
+                ),
+              ]),
+          new Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Teste 2",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(fontStyle: FontStyle.italic, fontSize: 15.0),
+                ),
+                new Flexible(child: Text("Mundo", style: TextStyle(fontStyle: FontStyle.italic, fontSize: 15.0),)),
+                new Flexible(child: Text("Mundo 2", style: TextStyle(fontStyle: FontStyle.normal, fontSize: 15.0),)),
+                Text(
+                  "Teste 2",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(fontStyle: FontStyle.italic, fontSize: 15.0),
+                ),
+              ]),
         ],
       ),
     );
